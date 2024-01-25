@@ -1,0 +1,718 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* 
+================================
+Navbar
+================================
+*/
+.navbar {
+    padding: 1% 5%;
+    box-shadow: 0 5px 20px rgba(128, 128, 128, 0.404);
+    background-color: white;
+}
+
+.navbar-nav .nav-item {
+    transition: all ease 2s;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: rgba(255, 0, 0, 0.555);
+}
+
+/* 
+================================
+media queries in header
+================================
+*/
+header {
+    background-color: rgba(44, 38, 38, 0.123);
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        height: 400px;
+    }
+
+    header h1 {
+        padding-top: 30%;
+        font-size: 30px;
+        color: rgb(26, 16, 36);
+    }
+
+    header p {
+        padding: 2% 0;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    header a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    header img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    header h1 {
+        padding-top: 30%;
+        font-size: 45px;
+        color: rgb(26, 16, 36);
+    }
+
+    header p {
+        padding: 2% 0;
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    header a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    header img {
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    header h1 {
+        padding-top: 30%;
+        font-size: 70px;
+        color: rgb(26, 16, 36);
+    }
+
+    header p {
+        padding: 2% 0;
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 15px 25px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    header a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    header img {
+        width: 300px;
+    }
+}
+
+/* 
+================================
+section 1
+================================
+*/
+
+.sec1 h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.sec1 .new-collection {
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sec1 .new-collection img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    filter: grayscale(0);
+}
+
+.sec1 .new-collection img:hover {
+    filter: grayscale(.5);
+    transform: scale(1.2) rotate(7deg);
+}
+
+.sec1 p {
+    color: red;
+    font-weight: bold;
+}
+
+/* 
+================================
+media queries in section 1
+================================
+*/
+@media only screen and (max-width: 576px) {
+    .sec1 .new-collection {
+        width: 380px;
+        height: 400px;
+    }
+
+    .sec1 .new-collection img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec1 h3 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .sec1 .new-collection {
+        width: 220px;
+        height: 300px;
+        font-size: 10px;
+    }
+
+    .sec1 .new-collection img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec1 h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .sec1 .new-collection {
+        width: 300px;
+        height: 400px;
+        font-size: 10px;
+    }
+
+    .sec1 .new-collection img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec1 h3 {
+        font-size: 25px;
+    }
+}
+
+/* 
+================================
+section 2
+================================
+*/
+.sec2 .photo-collection-1 {
+    width: 650px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sec2 .photo-1 {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    filter: grayscale(0);
+}
+
+.sec2 .photo-1:hover {
+    filter: grayscale(.5);
+    transform: scale(1.2);
+}
+
+.sec2 .photo-collection-2 {
+    width: 315px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sec2 .photo-2 {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    filter: grayscale(0);
+}
+
+.sec2 .photo-2:hover {
+    filter: grayscale(.5);
+    transform: scale(1.2);
+}
+
+.sec2 .photo-collection-3 {
+    width: 300px;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.sec2 .photo-3 {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    filter: grayscale(0);
+}
+
+.sec2 .photo-3:hover {
+    filter: grayscale(.5);
+    transform: scale(1.2);
+}
+
+.sec2 .photo-collection-4 {
+    width: 300px;
+    height: 47vh;
+    overflow: hidden;
+    margin-top: 18px;
+}
+
+.sec2 .photo-4 {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    filter: grayscale(0);
+}
+
+.sec2 .photo-4:hover {
+    filter: grayscale(.5);
+    transform: scale(1.2);
+}
+
+/* 
+================================
+media queries in section 2
+================================
+*/
+@media only screen and (max-width: 576px) {
+    .sec2 .photo-collection-1 {
+        width: 470px;
+        height: 400px;
+    }
+
+    .sec2 .photo-collection-2 {
+        width: 470px;
+        height: 400px;
+    }
+
+    .sec2 .photo-collection-3 {
+        width: 470px;
+        height: 400px;
+    }
+
+    .sec2 .photo-collection-4 {
+        width: 470px;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .sec2 .photo-collection-1 {
+        width: 440px;
+        height: 400px;
+    }
+
+    .sec2 .photo-collection-2 {
+        width: 220px;
+        height: 400px;
+    }
+
+    .sec2 .photo-collection-3 {
+        width: 270px;
+        height: 190px;
+    }
+
+    .sec2 .photo-collection-4 {
+        width: 270px;
+        height: 190px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .sec2 .photo-collection-1 {
+        width: 430px;
+        height: 100vh;
+    }
+
+    .sec2 .photo-collection-2 {
+        width: 210px;
+        height: 100vh;
+    }
+
+    .sec2 .photo-collection-3 {
+        width: 200px;
+        height: 290px;
+    }
+
+    .sec2 .photo-collection-4 {
+        width: 200px;
+        height: 290px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .sec2 .photo-collection-1 {
+        width: 660px;
+        height: 100vh;
+    }
+
+    .sec2 .photo-collection-2 {
+        width: 325px;
+        height: 100vh;
+    }
+
+    .sec2 .photo-collection-3 {
+        width: 300px;
+        height: 295px;
+    }
+
+    .sec2 .photo-collection-4 {
+        width: 300px;
+        height: 295px;
+    }
+}
+
+/* 
+================================
+section 3
+================================
+*/
+.sec3 {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.sec3 h1 {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.sec3 p {
+    font-weight: bolder;
+    color: red;
+}
+
+.sec3 img {
+    border-bottom: 3px solid red;
+}
+
+.sec3 .watches {
+    position: relative;
+}
+
+.sec3 i {
+    color: red;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    font-size: 30px;
+}
+
+/* 
+================================
+media queries in section 4
+================================
+*/
+@media only screen and (max-width: 576px) {
+    .sec4 h1 {
+        padding-top: 30%;
+        font-size: 30px;
+        color: rgb(26, 16, 36);
+    }
+
+    .sec4 p {
+        padding: 2% 0;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .sec4 a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    .sec4 a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    .sec4 img {
+        width: 300px;
+        padding-top: 2%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .sec4 h1 {
+        padding-top: 10%;
+        font-size: 25px;
+        color: rgb(26, 16, 36);
+    }
+
+    .sec4 p {
+        padding: 2% 0;
+        font-size: 10px;
+        line-height: 2;
+    }
+
+    .sec4 a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    .sec4 a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    .sec4 img {
+        width: 270px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .sec4 h1 {
+        padding-top: 20%;
+        font-size: 50px;
+        color: rgb(26, 16, 36);
+    }
+
+    .sec4 p {
+        padding: 2% 0;
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    .sec4 a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 15px 25px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    .sec4 a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    .sec4 img {
+        width: 400px;
+    }
+}
+
+/* 
+================================
+media queries in section 5
+================================
+*/
+@media only screen and (max-width: 576px) {
+    .sec5 h1 {
+        font-size: 30px;
+        color: rgb(26, 16, 36);
+    }
+
+    .sec5 p {
+        padding: 2% 0;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .sec5 a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    .sec5 a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    .sec5 img {
+        width: 300px;
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .sec5 h1 {
+        padding-top: 20%;
+        font-size: 25px;
+        color: rgb(26, 16, 36);
+    }
+
+    .sec5 p {
+        padding: 2% 0;
+        font-size: 10px;
+        line-height: 2;
+    }
+
+    .sec5 a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    .sec5 a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    .sec5 img {
+        width: 270px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .sec5 h1 {
+        padding-top: 20%;
+        font-size: 50px;
+        color: rgb(26, 16, 36);
+    }
+
+    .sec5 p {
+        padding: 2% 0;
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    .sec5 a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 15px 25px;
+        border-radius: 10px;
+        outline: none;
+        background: linear-gradient(to left, #0f131a, #13171f, #161c24, #1a2029, #1d242e) no-repeat;
+        background-size: 0%;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+
+    .sec5 a:hover {
+        color: white;
+        background-size: 100%;
+    }
+
+    .sec5 img {
+        width: 400px;
+    }
+}
+
+/* 
+================================
+section 6
+================================
+*/
+.sec6 .container {
+    background-color: rgba(255, 0, 0, 0.795);
+    margin-top: 5%;
+    padding: 5%;
+    color: white;
+}
+
+.sec6 i {
+    font-size: 30px;
+    padding-bottom: 6%;
+}
+
+/* 
+================================
+footer
+================================
+*/
+footer {
+    margin-top: 5%;
+}
+
+footer a {
+    text-decoration: none;
+    color: grey;
+}
